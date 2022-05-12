@@ -27,6 +27,7 @@
         android:layout_width="121dp"
         android:layout_height="75dp"
         android:layout_marginEnd="70dp"
+        android:background="#4CAF50"
         android:text="Verde"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +39,7 @@
         android:layout_width="121dp"
         android:layout_height="75dp"
         android:layout_marginStart="70dp"
+        android:background="#2196F3"
         android:text="Azul"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +51,7 @@
         android:layout_width="121dp"
         android:layout_height="75dp"
         android:layout_marginEnd="70dp"
+        android:background="#FFEB3B"
         android:text="Amarillo"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,6 +63,7 @@
         android:layout_width="121dp"
         android:layout_height="75dp"
         android:layout_marginStart="70dp"
+        android:background="#E30A0A"
         android:text="Rojo"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:layout_marginEnd="75dp"
+        android:background="#673AB7"
         android:text="Jugar! "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,21 +86,13 @@
         app:layout_constraintVertical_bias="0.75" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Simon Dice "
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
