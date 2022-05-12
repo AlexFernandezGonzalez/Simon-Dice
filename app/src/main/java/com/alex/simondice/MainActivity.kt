@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button // Sin esto no podemos usar el botón
 import android.widget.TextView
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
 
 
@@ -36,9 +39,15 @@ class MainActivity : AppCompatActivity() {
 
            //Lógica de la partida en si
 
-            //
-            crearSecuencia()
+
             mostrarRondas()
+
+            //Usamos la corrutina
+            val job= GlobalScope.launch(Dispatchers.Main){
+                crearSecuencia()
+            }
+
+
 
 
         }
@@ -71,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun crearSecuencia(){
+    suspend fun crearSecuencia(){
         Log.i("Estado","Se crea la secuencia")
         //Creamos la secuencia
         //Esperamos a que el usuario haga la suya
